@@ -54,20 +54,3 @@ def getImgsFromCategory (category):
         file_name, file_extension = os.path.splitext(url_path)
         output_filename = output_dir + outfile_prefix + str(i) + file_extension
         getFileFromURL(url_path, output_filename)
-
-    
-    
-#%% Usage example
-#
-##image_list = '../db/imagenet_bucket.txt'
-##output_dir = '../db/imagenet_bucket/'
-#image_list = '../db/imagenet_tire.txt'
-#output_dir = '../db/imagenet_tire/'
-#
-##%%
-#lines = readListFromFile( image_list )
-#for i in range(1, len(lines)):
-#    print(lines[i])
-#    file_name, file_extension = os.path.splitext(lines[i])
-#    downloadFileFromURL(lines[i], output_dir + 'imagenet_bucket_' + str(i) + file_extension)
-    
